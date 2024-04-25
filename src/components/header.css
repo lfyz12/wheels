@@ -1,0 +1,127 @@
+.header {
+    width: 100vw;
+    height: 166px;
+}
+
+@media(max-width: 1099px) {
+    .header {
+        height: 16vw;
+        min-height: 90px;
+    }
+}
+
+
+.header_top_line {
+    background: #222831;
+    height: 30%;
+    font-size: calc(10px + 4 * (100vw/ 1920));
+}
+
+.header_search_section {
+    width: 49%;
+    height: 34.7%;
+    min-height: 30px;
+}
+
+.header_input {
+    width: 100%;
+    border: 1px solid #393E46;
+    outline: none;
+    font-size: calc(12px + 4 * (100vw/ 1920));
+}
+
+/*.header_search_btn {*/
+/*    background: transparent;*/
+/*    border: 1px solid #393E46;*/
+/*    border-left: none;*/
+/*    width: 10%;*/
+/*}*/
+
+.header_navbar {
+    height: 70%;
+}
+
+.header_icon {
+    cursor: pointer;
+}
+
+.header_logo {
+    width: 23%;
+    min-width: 133px;
+    min-height: 65px;
+}
+
+.header_icons_box {
+    width: 20%;
+}
+
+.burgerMenu {
+    width: 35px;
+    height: 35px;
+    top: 5px;
+    display: block;
+    position: relative !important;
+    z-index: 2;
+    cursor: pointer;
+    right: 0;
+}
+
+.burgerMenu.open {
+    z-index: 2;
+}
+
+.burgerMenu::after,
+.burgerMenu::before {
+    content: '';
+    background-color: #222831;
+    position: absolute;
+    z-index: 3;
+    width: 30px;
+    height: 4px;
+    left: 0;
+}
+
+.burgerMenu:hover::after,
+.burgerMenu:hover::before,
+.burgerMenu:hover span {
+    background-color: #393E46;
+}
+
+.burgerMenu span {
+    background-color: #222831;
+    content: '';
+    position: absolute;
+    top: 10px;
+    width: 30px;
+    height: 4px;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.burgerMenu::after {
+    bottom: 10px;
+    transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.burgerMenu::before {
+    top: 0;
+    transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1)
+}
+
+.burgerMenu.open::after {
+    transform: rotate(45deg);
+    width: 30px;
+    bottom: 18.5px;
+    transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+
+.burgerMenu.open::before {
+    transform: rotate(-45deg);
+    width: 30px;
+    top: 11.5px;
+    transition: left 300ms, top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.burgerMenu.open span {
+    transform: scale(0);
+}
