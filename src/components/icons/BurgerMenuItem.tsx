@@ -1,16 +1,18 @@
 import React, {useState} from 'react';
 
-const BurgerMenuItem = () => {
-    const [open, setOpen] = useState<boolean>(false);
-    const openMenu = (): void => {
-        return !open ? setOpen(true) : setOpen(false);
-    }
+interface IProps {
+    show: boolean,
+    onShow(): void
+}
+
+const BurgerMenuItem = ({show, onShow}: IProps) => {
+
 
     return (
         <div className='me-1'>
             <div
-                className={`burgerMenu ${open ? 'open' : ''}`}
-                onClick={openMenu}
+                className={`burgerMenu ${show ? 'open' : ''}`}
+                onClick={onShow}
             >
                 <span></span>
             </div>

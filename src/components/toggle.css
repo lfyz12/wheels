@@ -1,0 +1,116 @@
+.toggle_box {
+    width: 386px;
+   height: 61px;
+    float: right;
+}
+
+.switch, .toggle {
+    height: 100%;
+    border-radius: 20px;
+}
+
+.switch {
+    width: 100%;
+    background-color: #222831;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle {
+    position: absolute;
+    width: 50%;
+    background-color: #FFCC70;
+    box-shadow: 0 2px 15px #FFCC70;
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.toggle.wheels {
+    transform: translate(100%);
+}
+
+.toggle.disk {
+    transform: translate(0);
+}
+
+.diskName, .wheelsName {
+    color: #222831;
+    transition: color .3s ease-in-out;
+}
+
+
+.names {
+    color: #EEEEEE;
+    width: 100%;
+    height: 100%;
+    font-size: calc(20px + 4 * (100vw / 1920));
+    font-weight: 400;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    user-select: none;
+    padding-top: 0.75vw;
+}
+
+@media (max-width: 1199px) {
+    .names {
+        font-size: calc(10px + 2 * (100vw / 1903));
+        padding-top: 1.6vw;
+    }
+
+}
+
+@media (max-width: 775px) {
+    .names {
+        padding-top: 3vw;
+    }
+}
+
+.toggle_i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    height: 25px;
+    color: white;
+    padding: 12px;
+    user-select: none;
+    border-radius: 50%;
+    background-color: #222831;
+}
+
+.toggle_i:hover + .toggle_box_information {
+    animation: fadeIn 0.5s ease forwards;
+    visibility: visible;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.toggle_box_information {
+    display: flex;
+    visibility: hidden;
+    font-size: calc(10px + 2 * (100vw / 1903));
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 15px;
+    height: max-content;
+    color: white;
+}
+
+@media (min-width: 400px) and (max-width: 1200px) {
+    .toggle_box_information{
+        position: absolute;
+        center: 0;
+        margin-block: 25px;
+    }
+}

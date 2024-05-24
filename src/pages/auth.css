@@ -1,0 +1,30 @@
+.auth_wrapper {
+    width: calc(100vw - 19px);
+    height: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth_content {
+    height: 80%;
+    width: 100%;
+    font-size: calc(16px + 4 * (100vw / 1920));
+    color: #000
+}
+
+.auth_input_box {
+    height: 100px;
+    width: 350px;
+}
+
+.auth_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    height: 42px;
+    background: #FFCC70;
+    color: #222831;
+}

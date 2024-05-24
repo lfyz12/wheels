@@ -1,0 +1,57 @@
+.filter_box {
+    height: 6vw;
+}
+
+.information_icon {
+    align-self: flex-start;
+    order: 1;
+}
+
+.filter_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    height: 42px;
+    width: 11%;
+    background: #FFCC70;
+    color: #222831;
+    box-shadow: 2px 2px 15px 2px #FFCC70;
+}
+
+.information_text {
+    display: none;
+}
+
+.filter_select_box {
+    background: #222831 !important;
+    color: #EEEEEE;
+    position: absolute;
+    text-align: center;
+    z-index: 1;
+}
+
+.filter_item {
+    height: 2.6vw;
+    min-height: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: calc(12px + 4 * (100vw / 1920)) !important;
+    font-weight: 500;
+    cursor: pointer;
+    width: fit-content;
+    padding-left: 2% !important;
+    background: transparent !important;
+    color: #222831;
+}
+
+.filter_item:hover {
+    background: transparent;
+    border-color: black;
+    color: #222831;
+}
+
+.disk_filter_box {
+    width: 40%;
+}

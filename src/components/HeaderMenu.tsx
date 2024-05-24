@@ -9,7 +9,7 @@ const HeaderMenu: FC<TProps> = ({show}: TProps) => {
 
 
     return (
-        <div className='w-100 h-100'>
+        <div className={`header_menu ${show ? 'show' : ''}`}>
             <div className='w-100 h-25 d-flex flex-column justify-content-around align-items-center'>
                 <span>Профиль</span>
                 <span>Корзина</span>

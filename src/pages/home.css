@@ -1,0 +1,70 @@
+.home_choose {
+    width: 1106px;
+    height: 400px;
+    margin: auto;
+}
+
+.home_choose_wheels {
+    background: url("../assets/wheels.png");
+    background-size: cover;
+    width: 43%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.home_choose_disk {
+    background: url("../assets/disk.png");
+    background-size: cover;
+    width: 43%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.home_choose_line {
+    height: 75%;
+    width: 2px;
+    background: black;
+}
+
+.choose_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    border-radius: 5px;
+    height: 16.2%;
+    width: 37.8%;
+    background: #FFCC70;
+    color: #222831;
+    box-shadow: 2px 2px 15px 2px #FFCC70;
+    font-size: calc(20px + 4 * (100vw / 1920));
+    font-weight: 600;
+}
+
+.sale_section {
+    height: 18vw;
+}
+
+.sale_item {
+    height: 18vw !important;
+}
+
+.sale_one {
+    background-image: url("../assets/saleOne.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sale_two {
+    background-image: url("../assets/sale2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sale_three {
+    width: 100%;
+    background-image: url("../assets/sale3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
